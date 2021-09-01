@@ -1,9 +1,14 @@
 $color-primary: #2B4655;
+$color-button: #693636;
+$textcolor-primary: #D4B823;
+$textcolor-secondary: #6D175A;
+
 
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    color: $textcolor-primary;
     background-color: $color-primary;
 }
 
@@ -11,7 +16,7 @@ $color-primary: #2B4655;
 body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .titleCard {
@@ -32,4 +37,3 @@ body {
 .profilePic--img {
     width: 100%;
 }
-

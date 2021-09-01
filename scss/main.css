@@ -2,13 +2,14 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  color: #D4B823;
   background-color: #2B4655;
 }
 
 body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .titleCard {
