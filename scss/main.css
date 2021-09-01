@@ -2,18 +2,29 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  background-color: #2B4655;
 }
 
 body {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .titleCard {
-  grid-column: 2/3;
+  grid-column: 1/4;
 }
 
 .navBar {
   grid-column: 2/3;
+}
+
+.profilePic {
+  height: 25vh;
+  border: 5px red solid;
+  overflow: hidden;
+}
+
+.profilePic--img {
+  width: 100%;
 }
