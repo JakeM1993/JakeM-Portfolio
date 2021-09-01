@@ -1,0 +1,21 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    grid-template-rows: 1fr 2fr;
+}
+
+.titleCard {
+   grid-column: 2 / 3; 
+}
+
+.navBar {
+    grid-column: 2/3;
+}
+
+
