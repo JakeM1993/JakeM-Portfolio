@@ -29,3 +29,7 @@ body {
 .profilePic--img {
   width: 100%;
 }
+
+header {
+  grid-column: 2/3;
+}
