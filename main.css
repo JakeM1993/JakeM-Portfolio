@@ -1,0 +1,72 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.button {
+  color: #1e1d1a;
+  background-color: #b49a5a;
+  border: 1px solid #877448;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+* {
+  color: #a58d54;
+  background-color: #1e1d1a;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gridLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  width: 100%;
+  border: #96804e;
+}
+
+.section {
+  border: 5px solid red;
+  height: 100%;
+}
+
+.section--Nav {
+  grid-row: 2/6;
+  grid-column: 1/-1;
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.section--headerSection {
+  grid-column: 1/-1;
+}
+
+.section--cv {
+  grid-column: 5/6;
+}
+
+.section--myProjects {
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+
+.section--mediaLinks {
+  grid-column: 2/5;
+}

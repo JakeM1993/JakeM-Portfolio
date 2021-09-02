@@ -1,0 +1,28 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    color: $Color1b;
+    background-color: $Color1;
+    border: 1px solid $Color4;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
