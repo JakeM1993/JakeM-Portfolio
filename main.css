@@ -1,8 +1,13 @@
-.navBar {
+.section--Nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  text-align: center;
+}
+
+.section--headrSection .titleText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
@@ -45,13 +50,6 @@
 .section--Nav {
   grid-row: 2/6;
   grid-column: 1/-1;
-}
-
-.navBar {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
 }
 
 .section--headerSection {

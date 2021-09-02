@@ -1,8 +1,15 @@
-.navBar {
+.section--Nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+}
+
+.section--headrSection {
+    .titleText { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 }
 
 .button {
@@ -20,9 +27,3 @@
     margin: 5px;
 }
 
-.navBar {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
