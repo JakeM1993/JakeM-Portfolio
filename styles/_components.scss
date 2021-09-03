@@ -1,15 +1,22 @@
-.section--Nav {
+.section--mainPanel {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.section--headrSection {
-    .titleText { 
+.section--headerSection {
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+    text-align: center;
+    overflow: hidden;
+}
+
+.section--mediaLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .button {
