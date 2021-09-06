@@ -1,28 +1,50 @@
-.section--mainPanel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section--headerSection {
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     overflow: hidden;
+    border:  5px ridge $color1;
+    border-radius: 7px;
+    margin: 25px;
 }
 
-.section--mediaLinks {
+.media-links {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
+.nav-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-text h3 {
+    border-bottom: 2px ridge $color3;
+    border-top: 2px ridge $color3;
+    padding: 20px;
+}
+
+.nav-text h5 {
+    border-bottom: 2px ridge $color3;
+    border-top: 2px ridge $color3;
+    padding: 10px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .button {
-    color: $Color1b;
-    background-color: $Color1;
-    border: 1px solid $Color4;
+    color: $color1b;
+    background-color: $color1;
+    border: 1px solid $color4;
     border-radius: 5px;
     width: 100px;
     height: 30px; 
@@ -33,4 +55,3 @@
     padding: 5px;
     margin: 5px;
 }
-

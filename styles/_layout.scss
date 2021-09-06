@@ -1,50 +1,46 @@
 * {
-    color: $Color2;
-    background-color: $Color1b;
+    color: $color2;
+    background-color: $color1b;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.gridLayout {
+.section {
+    display: grid;
+}
+
+.grid-layout {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     height: 100vh;
     width: 100%;
-    border: $Color3;
+    border: $color3;
 }
 
-.section--pageBanner {
-    grid-column: 1/-1;
-}
-
-.section--mainPanel {
-    grid-row: 2/6;
-    grid-column: 1/-1;
-}
-
-.section--headerSection {
-    height: 50%;
+.navbar {
     grid-column: 1/-1;
     grid-row: 2/3;
 }
 
-.section--cv {
-    grid-column: 5/6;
-    grid-row: 6/7;
+.nav-text {
+    grid-column: 1/-1;
+    grid-row: 2/4;
 }
 
-.section--myProjects {
-    grid-column: 1/2;
-    grid-row: 6/7;
+.nav-buttons {
+    grid-column: 2/5;
+    grid-row: 4/6;
 }
 
-.section--mediaLinks {
+.header {
+    height: 50%;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+
+.media-links {
     grid-column: 2/5;
     grid-row: 6/7;
 }
-
-@media screen and (min-width: 480px)
-
-
