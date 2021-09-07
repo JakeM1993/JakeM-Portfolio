@@ -42,8 +42,9 @@
 
 .nav-buttons {
     display: flex;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
+    flex-direction: column;
 }
 
 .button {
@@ -64,21 +65,42 @@
 
 @media screen and (min-width: $breakpoint-tablet) {
 
-    .button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: $color1b;
-        background-color: $color1;
-        border: 1px solid $color3;
-        border-radius: 5px;
-        width: 150px;
-        height: 100px; 
-        padding: 5px;
-        margin: 5px;
-        box-shadow: 2px 2px 5px black;
+    .nav-buttons {
+        flex-direction: row;
     }
 
+    .button {
+        width: 150px;
+        height: 100px; 
+    }
+}
+
+@media screen and (min-width: $breakpoint-laptop) {
+
+    body {
+        height: 100vh;
+    }
+
+    .header {
+        border: none;
+    }
+
+    .nav-bar-laptop {
+        background-color: $color3;
+    }
+    
+    .nav-bar-laptop h3 {
+        background-color: $color4;
+        color: $color1b;
+    }
+
+    .nav-bar-list {
+        background-color: $color3;
+    }
+    
+    .nav-bar-links {
+        background-color: $color3;
+        color: $color1b;
+    }
 
 }
