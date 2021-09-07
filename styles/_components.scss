@@ -9,6 +9,8 @@
     margin: 25px;
 }
 
+
+
 .media-links {
     display: flex;
     justify-content: center;
@@ -18,23 +20,24 @@
     margin-bottom: 10px;
 }
 
-.nav-text {
+.intro-title {
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
-}
-
-.nav-text h3 {
     border-bottom: 1px ridge $color4;
     border-top: 1px ridge $color4;
     padding: 20px;
+    margin: 10px;
 }
 
-.nav-text h5 {
+.intro-message {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     border-bottom: 1px ridge $color4;
     border-top: 1px ridge $color4;
     padding: 10px;
+    margin: 10px;
 }
 
 .nav-buttons {
@@ -44,16 +47,38 @@
 }
 
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: $color1b;
     background-color: $color1;
     border: 1px solid $color3;
     border-radius: 5px;
     width: 100px;
     height: 30px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     padding: 5px;
     margin: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $color1b;
+        background-color: $color1;
+        border: 1px solid $color3;
+        border-radius: 5px;
+        width: 150px;
+        height: 100px; 
+        padding: 5px;
+        margin: 5px;
+        box-shadow: 2px 2px 5px black;
+    }
+
+
 }
