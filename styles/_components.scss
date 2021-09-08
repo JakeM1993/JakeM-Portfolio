@@ -16,6 +16,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    text-decoration: none;
     color:  $color2;
     margin-bottom: 10px;
 }
@@ -88,8 +89,8 @@
     .nav-bar-laptop {
         background-color: $color1;
     }
-    
-    .nav-bar-laptop h3 {
+
+    .logo {
         background-color: $color3;
         color: $color1b;
     }
@@ -102,6 +103,7 @@
         background-color: $color1;
         color: $color1b;
         padding: 5px;
+        text-decoration: none;
     }
 
 }
