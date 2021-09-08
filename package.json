@@ -1,0 +1,23 @@
+{
+  "name": "jakem-portfolio",
+  "version": "1.0.0",
+  "description": "This is my portfolio and I will be continueing to improve it as I learn become a better developer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "sass --watch main.scss main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JakeM1993/JakeM-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JakeM1993/JakeM-Portfolio/issues"
+  },
+  "homepage": "https://github.com/JakeM1993/JakeM-Portfolio#readme",
+  "devDependencies": {
+    "sass": "^1.39.0"
+  }
+}
