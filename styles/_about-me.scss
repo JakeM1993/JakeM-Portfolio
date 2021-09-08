@@ -1,0 +1,40 @@
+.profile-pic {
+    border: 10px solid $color1;
+    border-radius: 100px;
+}
+
+.intro-message p {
+    max-width: 300px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $color1b;
+    background-color: $color1;
+    border: 1px solid $color3;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px; 
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.intro-title {
+    border: none;
+}
+
+.intro-title h3 {
+    border-bottom: 2px solid $color4;
+}
+
+.header {
+    border: none;
+}
+
+.nav-buttons {
+    display: none;
+}
