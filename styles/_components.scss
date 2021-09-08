@@ -1,36 +1,106 @@
-.section--mainPanel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section--headerSection {
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     overflow: hidden;
+    border:  5px solid $color2;
+    border-radius: 7px;
+    margin: 25px;
 }
 
-.section--mediaLinks {
+
+
+.media-links {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    color:  $color2;
+    margin-bottom: 10px;
+}
+
+.intro-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px ridge $color4;
+    border-top: 1px ridge $color4;
+    padding: 20px;
+    margin: 10px;
+}
+
+.intro-message {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px ridge $color4;
+    border-top: 1px ridge $color4;
+    padding: 10px;
+    margin: 10px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
 }
 
 .button {
-    color: $Color1b;
-    background-color: $Color1;
-    border: 1px solid $Color4;
-    border-radius: 5px;
-    width: 100px;
-    height: 30px; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: $color1b;
+    background-color: $color1;
+    border: 1px solid $color3;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px; 
     padding: 5px;
     margin: 5px;
+    box-shadow: 2px 2px 5px black;
 }
 
+@media screen and (min-width: $breakpoint-tablet) {
+
+    .nav-buttons {
+        flex-direction: row;
+    }
+
+    .button {
+        width: 150px;
+        height: 100px; 
+    }
+}
+
+@media screen and (min-width: $breakpoint-laptop) {
+
+    body {
+        height: 100vh;
+    }
+
+    .header {
+        border: none;
+    }
+
+    .nav-bar-laptop {
+        background-color: $color3;
+    }
+    
+    .nav-bar-laptop h3 {
+        background-color: $color4;
+        color: $color1b;
+    }
+
+    .nav-bar-list {
+        background-color: $color3;
+    }
+    
+    .nav-bar-links {
+        background-color: $color3;
+        color: $color1b;
+    }
+
+}

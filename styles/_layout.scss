@@ -1,50 +1,108 @@
 * {
-    color: $Color2;
-    background-color: $Color1b;
+    color: $color1;
+    background-color: $color1b;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.gridLayout {
+// .section {
+//     display: grid;
+// }
+
+.nav-bar-laptop {
+    display: none;
+}
+
+.grid-layout {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     height: 100vh;
     width: 100%;
-    border: $Color3;
+    border: $color3;
 }
 
-.section--pageBanner {
-    grid-column: 1/-1;
-}
-
-.section--mainPanel {
-    grid-row: 2/6;
-    grid-column: 1/-1;
-}
-
-.section--headerSection {
+.header {
     height: 50%;
     grid-column: 1/-1;
-    grid-row: 2/3;
+    grid-row: 1/2;
 }
 
-.section--cv {
-    grid-column: 5/6;
-    grid-row: 6/7;
+.intro {
+    height: 50%;
+    grid-column: 1/-1;
+    grid-row: 2/4;
 }
 
-.section--myProjects {
-    grid-column: 1/2;
-    grid-row: 6/7;
+.nav-buttons {
+    grid-column: 2/5;
+    grid-row: 4/6;
 }
 
-.section--mediaLinks {
+.media-links {
     grid-column: 2/5;
     grid-row: 6/7;
 }
 
-@media screen and (min-width: 480px)
+@media screen and (min-width: $breakpoint-tablet) {
+
+ .nav-buttons {
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+ }
+}
+
+@media screen and (min-width: $breakpoint-laptop) {
+
+    // .section {
+    //     display: grid;
+    // }
+    
+   .nav-bar-laptop {
+       display: flex;
+       justify-content: space-between;
+       align-items: space-between;
+       text-align: center;
+       grid-column: 1/-1;
+       height: 10vh;
+   }
+
+   .grid-layout {
+       height: 90vh;
+   }
+
+   .nav-bar-list {
+       display: flex;
+       justify-content: space-between;
+       width: 60%;
+   }
+
+   .nav-bar-links {
+       list-style: none;
+   }
+    
+    .header {
+        height: 50%;
+        grid-column: 1/-1;
+        grid-row: 2/5;
+    }
+    
+    .intro {
+    height: 50%;
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    }
+    
+    .nav-buttons {
+        display: none;
+    }
+    
+    .media-links {
+        grid-column: 2/5;
+        grid-row: 6/7;
+    }
 
 
+}
