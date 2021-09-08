@@ -268,4 +268,23 @@ form {
   grid-gap: 16px;
 }
 
+.project-cards {
+  grid-column: 1/-1;
+  grid-row: 1/5;
+  border: 5px solid red;
+  display: flex;
+  align-items: flex-end;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 2px solid red;
+  width: 40vw;
+  height: 40vh;
+  margin: 25px;
+}
+
 /*# sourceMappingURL=main.css.map */
